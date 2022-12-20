@@ -1,6 +1,6 @@
 import { v4 as v4uuid } from "uuid";
 import axios from "axios";
-import md5 from "md5";
+import * as md5 from "md5";
 import sharp from "sharp";
 
 import asyncRetry from "async-retry";
