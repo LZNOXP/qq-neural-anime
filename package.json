@@ -5,8 +5,8 @@
 	"main": "./build/index.js",
 	"types": "./build/index.d.ts",
 	"scripts": {
-		"clean": "rimraf build/",
-		"build": "npm run clean && tsc -p tsconfig.json",
+		"prebuild": "rimraf build/",
+		"build": "tsc -p tsconfig.json",
 		"build:watch": "tsc -w -p tsconfig.json",
 		"start": "node build/index.js",
 		"start:watch": "nodemon -w build build/index.js",
