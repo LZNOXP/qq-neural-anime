@@ -5,8 +5,9 @@
 	"main": "build/index.js",
 	"types": "build/index.d.ts",
 	"scripts": {
-		"prebuild": "rimraf dist",
+		"prebuild": "rimraf build",
 		"prepare": "tsc",
+		"build": "tsc",
 		"build:all": "tsc && typedoc",
 		"build:docs": "typedoc",
 		"build:tsc": "tsc",
