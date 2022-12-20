@@ -6,12 +6,12 @@
 	"types": "./build/index.d.ts",
 	"scripts": {
 		"prebuild": "rimraf build/",
+		"prepare": "npm run build",
 		"build": "tsc -p tsconfig.json",
 		"build:watch": "tsc -w -p tsconfig.json",
 		"start": "node build/index.js",
 		"start:watch": "nodemon -w build build/index.js",
-		"lint": "eslint .",
-		"prepare": "npm run build"
+		"lint": "eslint ."
 	},
 	"keywords": [],
 	"author": "",
