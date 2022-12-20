@@ -2,8 +2,8 @@
 	"name": "qq-neural-anime",
 	"version": "1.0.0",
 	"description": "Converts your photos to 2D anime art via the new AI made by QQ",
-	"main": "./build/index.js",
-	"types": "./build/index.d.ts",
+	"main": "build",
+	"types": "build",
 	"scripts": {
 		"prebuild": "rimraf build/",
 		"prepare": "tsc",
