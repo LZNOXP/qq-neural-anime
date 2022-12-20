@@ -5,7 +5,7 @@
 	"main": "build/index.js",
 	"types": "build/index.d.ts",
 	"scripts": {
-		"prepare": "tsc",
+		"prepare": "npm run build",
 		"build": "tsc -p tsconfig.json",
 		"build:watch": "tsc -w -p tsconfig.json",
 		"start": "node build/index.js",
